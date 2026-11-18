@@ -1,4 +1,4 @@
-# OMS Next
+# OMS 
 A multi-user Order Management System starter: React/Vite + Java 21/Spring Boot + MySQL 8.
 
 ## Requirements
