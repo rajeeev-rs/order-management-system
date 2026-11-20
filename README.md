@@ -22,8 +22,6 @@ $env:DB_URL="jdbc:mysql://localhost:3306/oms_db"
 $env:DB_USERNAME="oms_user"
 $env:DB_PASSWORD="your-private-password"
 $env:JWT_SECRET="replace-with-a-random-secret-at-least-32-characters-long"
-# Optional: AI assistant
-$env:ANTHROPIC_API_KEY="your-anthropic-api-key"
 mvn spring-boot:run
 ```
 Backend: http://localhost:8080
@@ -43,7 +41,7 @@ The first account registered becomes ADMIN; subsequent accounts are EMPLOYEE. Em
 - ADMIN and EMPLOYEE roles
 - Order creation/list/update/delete API (delete is admin-only)
 - Modern responsive dashboard and AI assistant page
-- AI assistant sends only the signed-in user's visible order data to Anthropic
+- Rule-based order assistant that answers questions about order counts, pending and delivered orders, and total sales from the database
 
 ## Before public deployment
 This is a development starter, not a security-audited production system. Add email verification, password reset, rate limiting, audit logging, backups, monitoring, tests, database migrations, HTTPS, secure secret storage, and a reviewed registration/admin policy. Never commit secrets or expose the backend/database directly to the public internet.
