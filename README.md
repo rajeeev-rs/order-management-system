@@ -1,6 +1,10 @@
 # OMS 
 A multi-user Order Management System starter: React/Vite + Java 21/Spring Boot + MySQL 8.
 
+**Live demo:** https://order-management-system-pi-sable.vercel.app
+
+> The backend runs on a free server that sleeps when idle, so the first load can take up to a minute.
+
 ## Requirements
 Java 21, Maven 3.9+, Node 20+, MySQL 8.
 
